@@ -38,7 +38,7 @@
                         <div class="count w-2/4  rounded border text-center">
                             {{ $shared }} files Shared
                         </div>
-                        <a href="{{ url('files/shared') }} "
+                        <a href="{{ url('Userfiles/shared') }} "
                            class="bg-blue-500 hover:bg-blue-700 w-2/4 text-white font-bold py-2 px-4 rounded-lg">
                             {{ __('View Shared files') }}
                         </a>
@@ -47,7 +47,7 @@
                         <div class="count w-2/4  rounded border text-center">
                             {{ $received }} files Received
                         </div>
-                        <a href="{{ url('files/received') }}"
+                        <a href="{{ url('Userfiles/received') }}"
                            class="bg-blue-500 hover:bg-blue-700 w-2/4 text-white font-bold py-2 px-4 rounded-lg">
                             {{ __('Received files') }}
                         </a>
