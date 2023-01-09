@@ -15,7 +15,7 @@ class Controller extends BaseController
     {
         $user = auth()->user();
         $files = $user->files->count();
-        $shared = $user->shares == null ? 0 : $user->shares->count();
+        $shared = $user->shared == null ? 0 : $user->shared->count();
         $received = $user->received == null ? 0 : $user->received->count();
 
         if ($user->space_limit == null) {
