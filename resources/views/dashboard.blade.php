@@ -18,7 +18,7 @@
                         <span class="text-base font-medium text-blue-700 dark:text-white">Storage Used</span>
                         <span class="text-sm font-medium text-blue-700 dark:text-white">{{ $used_space }}/{{ $total_space }} || {{ $percentage }}%</span>
                     </div>
-                    
+
                     <div class="w-full bg-gray-200 rounded-lg  dark:bg-gray-700 h-4 border">
                         <div class="bg-blue-600 h-4 h-4 rounded-full mb-1" style="width: {{$percentage+2}}%"></div>
                     </div>
