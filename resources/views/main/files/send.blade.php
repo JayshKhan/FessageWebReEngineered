@@ -8,7 +8,7 @@
     <div class="py-12">
         <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
             <div class="bg-white overflow-hidden shadow-sm sm:rounded-lg text-center">
-                <div class="grid place-items-center m-4 bg-gray-200 p-4 rounded-lg">
+                <div class="grid place-items-center m-4 bg-gray-200 p-4 border border-secondary shadow-blue-700 p-2 rounded-lg">
                     @if(str_starts_with($file->type, 'image/'))
                         <img src="{{ asset($file->path) }}" height='200' width = '200' class="object-cover object-center shadow-lg shadow-blue-700/50">
                     @elseif(str_starts_with($file->type, 'video/'))

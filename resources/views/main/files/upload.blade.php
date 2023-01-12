@@ -8,13 +8,17 @@
     <div class="py-12">
         <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
             <div class=" overflow-hidden shadow-sm sm:rounded-lg">
-                <form class="bg-white border border-blue-600 shadow-md rounded-lg p-8 grid place-items-center text-center" method="post" action="{{ url('files') }}" enctype="multipart/form-data">
+                <form class="bg-white border border-blue-600 shadow-md rounded-lg p-8 grid place-items-center text-center border p-1 border-primary" method="post" action="{{ url('files') }}" enctype="multipart/form-data">
                     @csrf
                     <h1 class="text-2xl font-bold mb-4 text-center">File Upload</h1>
                     <div class=" text-center">
-                        <input type="file" id="file" name="file" class=" file:bg-blue-500 file:border-none file:rounded-full file:p-4
-                         file:m-4 file:shadow-lg file:shadow-blue-600/50 file:text-white border w-50 rounded-lg @error('file') is-invalid @enderror" value="{{ old('file') }}" required autocomplete="file" autofocus>
+                        <input type="file" id="file" name="file" class="
+                         file:bg-primary file:border-primary file:rounded-full file:p-4
+                            file:text-white file:font-bold file:shadow-md file:outline-none file:cursor-pointer
+                            file:transition file:duration-500 file:ease-in-out file:transform file:hover:-translate-y-1 file:hover:scale-110
+                            file:mb-4
 
+                         file:m-4 file:shadow-lg file:shadow-blue-600/50 file:text-black border p-1 file:border-primary w-50 rounded-lg @error('file') is-invalid @enderror" value="{{ old('file') }}" required autocomplete="file" autofocus>
                     </div>
                     <div id="preview" class="grid grid-cols-3 gap-4 flex justify-around mt-4">
 
@@ -23,7 +27,9 @@
                         <div id="progress-bar" class="bg-blue-500 absolute h-2 w-0 rounded-full top-0 left-0"></div>
                     </div>
                     <button type="submit"
-                            class="text-center  bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full mt-4">
+                            class="text-center  bg-primary hover:bg-blue-700 text-black
+
+                             hover:text-white font-bold py-2 px-4 rounded-full mt-4">
                         Upload
                     </button>
                 </form>

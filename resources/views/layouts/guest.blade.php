@@ -13,8 +13,8 @@
         <!-- Scripts -->
         @vite(['resources/css/app.css', 'resources/js/app.js'])
     </head>
-    <body class="font-sans text-gray-900 antialiased">
-        <div class="min-h-screen flex flex-col sm:justify-center items-center pt-6 sm:pt-0 bg-gray-100">
+    <body class="font-sans text-gray-900 antialiased flex h-screen">
+        <div class="w-full flex flex-col sm:justify-center items-center pt-6 sm:pt-0 bg-gray-100">
             <div>
                 <a href="/">
                     {{-- <x-application-logo class="w-20 h-20 fill-current text-gray-500" /> --}}
@@ -26,5 +26,10 @@
                 {{ $slot }}
             </div>
         </div>
+        <footer class="absolute bottom-0 w-full">
+            <img class="h-16 w-full fill-current text-gray-800" src="{{url("./Images/Signin_Page_Footer_1.png")}}"/>
+        </footer>
+
+
     </body>
 </html>

@@ -11,15 +11,15 @@
         </h2>
     </x-slot>
 
-    <div class="py-12">
+    <div class="py-12 ">
         <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
             <div class="bg-white overflow-hidden shadow-sm sm:rounded-lg">
-                <div class="grid grid-cols-3 gap-4 border ">
+                <div class="grid grid-cols-3 gap-4 border border-secondary shadow-blue-700 p-2 rounded-lg">
                     @if($files->count() > 0)
                     @foreach($files as $file)
 
-                        <div class="col-span-1 bg-gray-200 m-4 rounded">
-                            <div class="relative h-300 w-300 mx-auto">
+                        <div class="col-span-1 bg-gray-200 m-4 rounded border p-1 border-primary">
+                            <div class="relative h-300 w-300 mx-auto border border-secondary rounded-lg p-1">
                                 @if(str_starts_with($file->type, 'image/'))
                                     <img src="{{ asset($file->path) }}" height='200' width = '200' class="object-cover object-center">
                                 @elseif(str_starts_with($file->type, 'video/'))

@@ -19,15 +19,15 @@
 
             <!-- Page Heading -->
             @if (isset($header))
-                <header class="bg-white shadow">
-                    <div class="max-w-7xl mx-auto py-6 px-4 sm:px-6 lg:px-8">
-                        {{ $header }}
+                <header class="bg-white shadow border border-primary rounded m-4 text-center">
+                    <div class="max-w-auto mx-auto py-6 px-4 sm:px-6 lg:px-8">
+                        <strong>{{ $header }}</strong>
                     </div>
                 </header>
             @endif
 
             <!-- Page Content -->
-            <main>
+            <main class="shadow-blue-700 border border-primary m-4 rounded">
                 {{ $slot }}
             </main>
         </div>
